@@ -1,0 +1,22 @@
+@require 'parameters.styl'
+@require 'functions.styl'
+
+body
+  font-family: main_font
+  font-size: base_font_size * 1rem
+  display: flex
+  justify-content: center
+  background-color: background
+  margin: 0
+  padding: 0
+  @require 'global_elements'
+  #container
+    display: grid
+    grid-template: auto 1fr auto / auto 1fr auto
+    height: 100%
+    max-width: page_width
+    @require 'panels/header.styl'
+    @require 'panels/left.styl'
+    @require 'panels/main.styl'
+    @require 'panels/right.styl'
+    @require 'panels/footer.styl'
