@@ -1,8 +1,8 @@
-@require 'parameters.styl'
-@require 'functions.styl'
+@require 'skins/default'
 
 body
   font-family: main_font
+  color: main_color
   font-size: base_font_size * 1rem
   display: flex
   justify-content: center
@@ -15,8 +15,4 @@ body
     grid-template: auto 1fr auto / auto 1fr auto
     height: 100%
     max-width: page_width
-    @require 'panels/header.styl'
-    @require 'panels/left.styl'
-    @require 'panels/main.styl'
-    @require 'panels/right.styl'
-    @require 'panels/footer.styl'
+    @require 'panels'
